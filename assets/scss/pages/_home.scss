@@ -31,6 +31,15 @@
 			right:3%;
 			top:25%;
 		}
+		input[type=text]{
+
+			&:focus{
+				outline: 0 solid;
+				box-shadow:0 0;
+				border-color:#ced4da;
+			}
+			
+		}
 	}
 	.single-section{
 		flex-basis:23.95%;
