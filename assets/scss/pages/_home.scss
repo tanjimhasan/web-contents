@@ -1,0 +1,114 @@
+/* ================ homepage style ================== */
+
+.section-showcase{
+	.section-head{
+		h2{
+			font-size: 2.299rem;
+			font-family: 'VT323', monospace;
+			margin:0;
+			@include media-breakpoint-only(xs) {
+		        font-size: 1.258rem;
+		    }
+		}
+		span{
+			display:inline-block;
+			background-color:#6AAF08;
+			width: 10%;
+			height:6px;
+			border-radius:40px;
+		}
+		span.black-border{
+			width:5%;
+			margin:0 10px;
+			background-color:#333;
+		}
+	}
+	.search-form{
+		position:relative;
+		margin-top:20px;
+		i.fas{
+			position:absolute;
+			right:3%;
+			top:25%;
+		}
+	}
+	.single-section{
+		flex-basis:23.95%;
+		margin-right:1.05%;
+		margin-top:20px;
+		&:nth-child(4n){
+            margin-right:0;
+        }
+        @include media-breakpoint-only(md) {
+           flex-basis:32.499%;
+	       &:nth-child(3n){
+
+	            margin-right:0;
+	        }
+	    }
+	    @include media-breakpoint-only(sm) {
+	        flex-basis:48%;
+	        margin-right:4%;
+	        &:nth-child(2n){
+
+	            margin-right:0;
+	        }
+	    }
+	    @include media-breakpoint-only(xs) {
+	        flex-basis:100%;
+	    }
+		.card{
+			transition:.3s;
+			.demo-bg{
+				background-size:cover;
+				background-position:center;
+				background-color:#333;
+				height:105px;
+			}
+			.card-title{
+				font-size: 0.81rem;
+				text-transform:uppercase;
+				font-weight:700;
+				margin-top: 12px;
+    			margin-bottom: 0;
+				line-height:1rem;
+				height: 35px;
+			}
+			.card-body{
+				padding:.5rem;
+			}
+			.bordered-btn{
+				display:inline-block;
+				padding:4px 20px;
+				border:1px solid #6AAF08;
+				border-radius:3px;
+				font-size:.9rem;
+				color:#6AAF08;
+				font-weight:600;
+				text-decoration:none;
+				transition:.3s;
+				margin-bottom: 10px;
+				&:hover{
+					background-color: #6AAF08;
+					display:inline-block;
+					padding:4px 20px;
+					border:1px solid #6AAF08;
+					border-radius:3px;
+					color:#fff;
+				}
+			}
+		}
+	}
+	nav.paginate-pagination{
+		text-align:center;
+		ul{
+			display:inline-block;
+			margin:20px 0;
+			li{
+				a.page{
+					color:#6AAF08;
+				}
+			}
+		}
+	}
+}
