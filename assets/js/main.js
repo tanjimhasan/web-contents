@@ -23,7 +23,7 @@ $(document).ready(function () {
         }
         //pagination
         $('#section-container').paginate({
-            'perPage': 16
+            'perPage': 8
         });
     });
 	

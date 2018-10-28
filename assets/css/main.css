@@ -2620,6 +2620,9 @@ ul, ol, li, form, fieldset, legend {
   margin: 0;
   padding: 0; }
 
+a:focus, input:focus, textarea:focus, button:focus, select:focus {
+  outline: 0 solid; }
+
 /* ================ Typography ================== */
 /* ================ Global setting ================== */
 /* ================ Helper classes ================== */
@@ -2654,6 +2657,10 @@ ul, ol, li, form, fieldset, legend {
     position: absolute;
     right: 3%;
     top: 25%; }
+  .section-showcase .search-form input[type=text]:focus {
+    outline: 0 solid;
+    box-shadow: 0 0;
+    border-color: #ced4da; }
 
 .section-showcase .single-section {
   flex-basis: 23.95%;

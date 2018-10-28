@@ -7,3 +7,4 @@ ul, ol, li, form, fieldset, legend
 	padding: 0;
 }
 
+a:focus, input:focus, textarea:focus, button:focus,select:focus { outline: 0 solid;}
